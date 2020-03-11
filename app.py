@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 #Set up the RSA keys
 randon_generator = Random().read
-set_of_keys = RSA.generate(4096, randon_generator)
+set_of_keys = RSA.generate(1024, randon_generator)
 
 public_key = set_of_keys.publickey()
 
